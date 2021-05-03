@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Movie from './component/Movie';
 
 function App() {
+  const FeatureaAPI = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc`;
+  const ImageAPI = `https://image.tmdb.org/t/p/w500`;
+  const SearchAPI = `https://api.themoviedb.org/3/search/movie?api_key=`
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Movie/>
+    </>
   );
 }
 
